@@ -12,8 +12,8 @@
 
     function ConnecterPDO()
   {
-  $lien_base = "mysql:host=localhost;dbname=guillaume.gaujac";
-  $db_username = "guillaume.gaujac";
+  $lien_base = "mysql:host=spartacus.iutc3.unicaen.fr;dbname=guillaume.gaujac";
+  $db_username = "guillaume.gaujac@unicaen.fr";
   $db_password = "peihahri";
 
   try

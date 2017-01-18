@@ -2,6 +2,9 @@
   include ("PDO_connect.php");
 
   $bdd = ConnecterPDO();
+  $sql = "select * from user";
+  $tab_rep;
+  $req = LireDonneesPDO1($bdd, $sql, $tab_rep);
 
  ?>
 
@@ -13,7 +16,6 @@
   </head>
   <body>
     <h1>TD n°0</h1>
-
     <p>
 
     </p>
