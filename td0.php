@@ -4,9 +4,13 @@
 
   if (isset($_POST['newRole']))
   {
-    $sql_max_id = "SELECT MAX(id)+1 FROM `role`";
-    $req_max_id = LireDonneesPDO1($bdd, $sql_max_id, $req_max_id);
-    var_dump($req_max_id);
+    // $sql_max_id = "SELECT MAX(id)+1 FROM 'role'";
+    // $req_max_id = LireDonneesPDO1($bdd, $sql_max_id, $req_max_id);
+    // echo '<b>'.$req_max_id.'</b>';
+    //$sql_insert = "insert into guillaume_gaujac.role(id,name) values (NULL ,".$_POST['newRole'].")";
+    //INSERT INTO 'guillaume_gaujac'.'role' ('id', 'name') VALUES (NULL, 'bidule');
+    $stmt = majDonnees($bdd,$sql_insert);
+    echo var_dump($stmt);
   }
 
 ?>
@@ -20,7 +24,7 @@
     <?php
     ?>
     <h1>TD n°0</h1>
-    <form name="formRole" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <form name="formRole" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
       <legend>Nom des roles</legend>
       <select name="nameRole">
         <?php
