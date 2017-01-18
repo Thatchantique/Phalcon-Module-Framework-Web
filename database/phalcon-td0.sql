@@ -19,8 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `phalcon-td0`
 --
-CREATE DATABASE IF NOT EXISTS `phalcon-td0` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `phalcon-td0`;
+
 
 -- --------------------------------------------------------
 
